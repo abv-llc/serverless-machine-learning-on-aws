@@ -11,7 +11,7 @@ phases:
       - python3 -m pip install --user virtualenv
       - python3 -m virtualenv MXNet
       - source MXNet/bin/activate
-      - pip install mxnet==1.4.0.post0
+      - pip install mxnet==1.4.0
       - rm -rf $(find MXNet/lib/python3.7/site-packages/numpy -name tests)
       - cp -r MXNet/lib/python3.7/site-packages/* mxnet/python
       - rm -rf mxnet/python/pip*
